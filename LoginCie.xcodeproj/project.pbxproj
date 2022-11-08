@@ -13,6 +13,14 @@
 		876924F629198F0A00A1B66B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876924F429198F0A00A1B66B /* Main.storyboard */; };
 		876924F829198F0B00A1B66B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876924F729198F0B00A1B66B /* Assets.xcassets */; };
 		876924FB29198F0B00A1B66B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876924F929198F0B00A1B66B /* LaunchScreen.storyboard */; };
+		876925052919901100A1B66B /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876925042919901100A1B66B /* logger.swift */; };
+		87692510291991BC00A1B66B /* CieIDWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87692508291991BC00A1B66B /* CieIDWKWebViewController.swift */; };
+		87692511291991BC00A1B66B /* CieIDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87692509291991BC00A1B66B /* CieIDButton.swift */; };
+		87692512291991BC00A1B66B /* CieLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8769250B291991BC00A1B66B /* CieLogo@3x.png */; };
+		87692513291991BC00A1B66B /* CieLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8769250C291991BC00A1B66B /* CieLogo@2x.png */; };
+		87692514291991BC00A1B66B /* StringURLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769250E291991BC00A1B66B /* StringURLValidator.swift */; };
+		87692515291991BC00A1B66B /* QueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769250F291991BC00A1B66B /* QueryString.swift */; };
+		876925172919BE0500A1B66B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876925162919BE0500A1B66B /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		876924F729198F0B00A1B66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		876924FA29198F0B00A1B66B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		876924FC29198F0B00A1B66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876925042919901100A1B66B /* logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
+		87692508291991BC00A1B66B /* CieIDWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CieIDWKWebViewController.swift; sourceTree = "<group>"; };
+		87692509291991BC00A1B66B /* CieIDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CieIDButton.swift; sourceTree = "<group>"; };
+		8769250B291991BC00A1B66B /* CieLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CieLogo@3x.png"; sourceTree = "<group>"; };
+		8769250C291991BC00A1B66B /* CieLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CieLogo@2x.png"; sourceTree = "<group>"; };
+		8769250E291991BC00A1B66B /* StringURLValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringURLValidator.swift; sourceTree = "<group>"; };
+		8769250F291991BC00A1B66B /* QueryString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryString.swift; sourceTree = "<group>"; };
+		876925162919BE0500A1B66B /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 		876924ED29198F0A00A1B66B /* LoginCie */ = {
 			isa = PBXGroup;
 			children = (
+				876925062919918400A1B66B /* login_cie_service */,
+				8769250229198FF000A1B66B /* core */,
 				876924EE29198F0A00A1B66B /* AppDelegate.swift */,
 				876924F029198F0A00A1B66B /* SceneDelegate.swift */,
 				876924F229198F0A00A1B66B /* ViewController.swift */,
@@ -65,6 +83,60 @@
 				876924FC29198F0B00A1B66B /* Info.plist */,
 			);
 			path = LoginCie;
+			sourceTree = "<group>";
+		};
+		8769250229198FF000A1B66B /* core */ = {
+			isa = PBXGroup;
+			children = (
+				8769250329198FFC00A1B66B /* utils */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		8769250329198FFC00A1B66B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				876925042919901100A1B66B /* logger.swift */,
+				876925162919BE0500A1B66B /* extensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		876925062919918400A1B66B /* login_cie_service */ = {
+			isa = PBXGroup;
+			children = (
+				87692507291991BC00A1B66B /* CieIDsdk */,
+			);
+			path = login_cie_service;
+			sourceTree = "<group>";
+		};
+		87692507291991BC00A1B66B /* CieIDsdk */ = {
+			isa = PBXGroup;
+			children = (
+				87692508291991BC00A1B66B /* CieIDWKWebViewController.swift */,
+				87692509291991BC00A1B66B /* CieIDButton.swift */,
+				8769250A291991BC00A1B66B /* resources */,
+				8769250D291991BC00A1B66B /* Extensions */,
+			);
+			path = CieIDsdk;
+			sourceTree = "<group>";
+		};
+		8769250A291991BC00A1B66B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8769250B291991BC00A1B66B /* CieLogo@3x.png */,
+				8769250C291991BC00A1B66B /* CieLogo@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		8769250D291991BC00A1B66B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8769250E291991BC00A1B66B /* StringURLValidator.swift */,
+				8769250F291991BC00A1B66B /* QueryString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +199,8 @@
 			files = (
 				876924FB29198F0B00A1B66B /* LaunchScreen.storyboard in Resources */,
 				876924F829198F0B00A1B66B /* Assets.xcassets in Resources */,
+				87692512291991BC00A1B66B /* CieLogo@3x.png in Resources */,
+				87692513291991BC00A1B66B /* CieLogo@2x.png in Resources */,
 				876924F629198F0A00A1B66B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87692511291991BC00A1B66B /* CieIDButton.swift in Sources */,
+				87692515291991BC00A1B66B /* QueryString.swift in Sources */,
+				87692510291991BC00A1B66B /* CieIDWKWebViewController.swift in Sources */,
 				876924F329198F0A00A1B66B /* ViewController.swift in Sources */,
 				876924EF29198F0A00A1B66B /* AppDelegate.swift in Sources */,
+				876925172919BE0500A1B66B /* extensions.swift in Sources */,
 				876924F129198F0A00A1B66B /* SceneDelegate.swift in Sources */,
+				87692514291991BC00A1B66B /* StringURLValidator.swift in Sources */,
+				876925052919901100A1B66B /* logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M727VVW7C8;
+				DEVELOPMENT_TEAM = 3WASMMG25S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginCie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +375,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +383,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = it.pe.LoginCie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M727VVW7C8;
+				DEVELOPMENT_TEAM = 3WASMMG25S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginCie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -323,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +415,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = it.pe.LoginCie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -2,6 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>CFBundleURLName</key>
+			<string>it.pe.LoginCie</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>it.pe.LoginCie</string>
+			</array>
+		</dict>
+	</array>
+	<key>SP_URL</key>
+	<string>https://login.asfweb.it/fbce008c-b9ac-4aa3-928b-9fcaea28fa44/connect/authorize?client_id=portalecittadino&amp;redirect_uri=it.pe.LoginCie:/&amp;response_type=code&amp;scope=asfappusers+openid+profile+offline_access+asfappcore+asfappprofile&amp;code_challenge_method=S256&amp;code_challenge=cntRazl9JTJPZsuSAdrEXoQ6Pe94YvgDh5xmRcMJyLg&amp;suppressed_prompt=login&amp;prompt=login&amp;authorityId=73</string>
+	<key>SP_URL_SCHEME</key>
+	<string>it.pe.LoginCie</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
