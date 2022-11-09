@@ -264,13 +264,13 @@ class CieIDWKWebViewController: UIViewController, WKNavigationDelegate {
             
             // IDENTITY SERVER CODE
             
-            let sessioStateKey = "&session_state=";
-            let codeKey = "?code="
+            let sessioStateKey = "session_state";
+            let codeKey = "code"
             let url = navigationAction.request.url!;
             let path = url.absoluteString;
             print("NEW PATH = \(path)")
             if(path.contains(sessioStateKey) && path.contains(codeKey)){
-                NotificationCenter.default.post(name: Notification.Name(IDNotificationManager.NOTIFICATION_CENTER_NAME), object: nil, userInfo: ["code":url.parametersFromQueryString?["code"] ?? "", "session_state":url.parametersFromQueryString?["session_state"] ?? "" ] )
+                NotificationCenter.default.post(name: Notification.Name(IDNotificationManager.NOTIFICATION_CENTER_NAME), object: nil, userInfo: [codeKey:url.parametersFromQueryString?[codeKey] ?? "", sessioStateKey:url.parametersFromQueryString?[sessioStateKey] ?? "" ] )
                 self.chiudiWebView()
             }
 
@@ -292,6 +292,8 @@ class CieIDWKWebViewController: UIViewController, WKNavigationDelegate {
                         //Chiama Cie ID
                         DispatchQueue.main.async(){
                              
+                            print(finalURL);
+                            
                             UIApplication.shared.open(finalURL!, options: [:], completionHandler: { [self] (success) in
 
                                 if success {
