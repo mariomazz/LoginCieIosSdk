@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8741824B291B13C70016DE45 /* IdentityServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741824A291B13C70016DE45 /* IdentityServer.swift */; };
 		876924EF29198F0A00A1B66B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876924EE29198F0A00A1B66B /* AppDelegate.swift */; };
 		876924F129198F0A00A1B66B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876924F029198F0A00A1B66B /* SceneDelegate.swift */; };
 		876924F329198F0A00A1B66B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876924F229198F0A00A1B66B /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8741824A291B13C70016DE45 /* IdentityServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityServer.swift; sourceTree = "<group>"; };
 		876924EB29198F0A00A1B66B /* LoginCie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginCie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		876924EE29198F0A00A1B66B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876924F029198F0A00A1B66B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87418249291B13780016DE45 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8741824A291B13C70016DE45 /* IdentityServer.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		876924E229198F0A00A1B66B = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		8769250229198FF000A1B66B /* core */ = {
 			isa = PBXGroup;
 			children = (
+				87418249291B13780016DE45 /* services */,
 				8769250329198FFC00A1B66B /* utils */,
 			);
 			path = core;
@@ -216,6 +227,7 @@
 				87692515291991BC00A1B66B /* QueryString.swift in Sources */,
 				87692510291991BC00A1B66B /* CieIDWKWebViewController.swift in Sources */,
 				876924F329198F0A00A1B66B /* ViewController.swift in Sources */,
+				8741824B291B13C70016DE45 /* IdentityServer.swift in Sources */,
 				876924EF29198F0A00A1B66B /* AppDelegate.swift in Sources */,
 				876925172919BE0500A1B66B /* extensions.swift in Sources */,
 				876924F129198F0A00A1B66B /* SceneDelegate.swift in Sources */,

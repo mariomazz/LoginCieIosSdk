@@ -266,9 +266,11 @@ class CieIDWKWebViewController: UIViewController, WKNavigationDelegate {
             
             let sessioStateKey = "&session_state=";
             let codeKey = "?code="
-            let path = navigationAction.request.url!.absoluteString;
+            let url = navigationAction.request.url!;
+            let path = url.absoluteString;
             print("NEW PATH = \(path)")
             if(path.contains(sessioStateKey) && path.contains(codeKey)){
+                NotificationCenter.default.post(name: Notification.Name(IDNotificationManager.NOTIFICATION_CENTER_NAME), object: nil, userInfo: ["code":url.parametersFromQueryString?["code"] ?? "", "session_state":url.parametersFromQueryString?["session_state"] ?? "" ] )
                 self.chiudiWebView()
             }
 
